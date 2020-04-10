@@ -1,0 +1,20 @@
+name: Run some CI
+# This workflow is triggered on pushes to the repository.
+on: [push]
+
+jobs:
+  build:
+    name: Test the App
+    # This job runs on Linux
+    runs-on: ubuntu-latest
+    steps:
+    # we use this standard action to checkout the code
+    - uses: actions/checkout@v2
+    - name: Use Node.js
+    # we use this setup action to get node ready inside the runner
+      uses: actions/setup-node@v1
+      with:
+        node-version: '12.x'
+    - run: npm install
+    # this is the step that's currently failing (so look in src/App.test.js)
+    - run: npm run test
