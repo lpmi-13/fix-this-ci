@@ -4,7 +4,7 @@ on: [push]
 
 jobs:
   build:
-    name: Test the App
+    name: Build the App
     # This job runs on Linux
     runs-on: ubuntu-latest
     steps:
@@ -17,4 +17,5 @@ jobs:
         node-version: '12.x'
     - run: npm install
     # this is the step that's currently failing (so look in src/App.test.js)
-    - run: NODE_ENV=production npm run build
+    - run: npm run build
+    - run: docker build -t new-application .
