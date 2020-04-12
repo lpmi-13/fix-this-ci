@@ -14,12 +14,14 @@ practice with finding and fixing issues in real (though contrived) pipelines.
 
 - fork the repository (don't just clone it, you need to have a copy in your own
 github account for the actions to work).
-- go ahead and trigger a run of your actions workflow (this is specified in the
-file `.github/workflows/ci.yml`, so take a look there if you want).
+
+- after you fork it, you'll see a screen like this in the actions tab:
+
+![disabled actions on forks](img/disabled-actions.png)
+
+- click the green button to enable actions, then push to the repo to trigger an action run (eg, there's currently a failing test, so fix and push that).
 
 ![the currently failing build](img/failing-workflow.png)
-
-- looks like it failed, so let's fix it
 
 ## Save the CI build!
 - it looks like the text wasn't found. Hmmmm...that could be because the casing
@@ -36,3 +38,5 @@ ignore casing issues.
 ![we fixed it!](img/it-worked.png)
 
 - Looks like it worked, Hurray!
+
+- now, checkout the `level-2` branch to try the next CI fix.
