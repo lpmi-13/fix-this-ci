@@ -17,6 +17,7 @@ function App() {
           rel="noopener noreferrer"
         >
           Hello, dear users!
+          <h2>{process.env.REACT_APP_SECRET_GREETING}</h2>
         </a>
       </header>
     </div>

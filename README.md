@@ -1,21 +1,8 @@
-# Fix-This-CI
+# Fix This CI
 
-Actually working with CI pipelines is something that isn't often taught in CS 
-or online programming courses, but it should be.
+## Level 2 - failing action
 
-One of the barriers to this is providing opportunities for learners to actually
-fix issues in actual pipelines. Just reading about them will give people plenty
-of nice information, but they get better at it by actually doing it.
-
-So this repo is an attempt at showing how we might be able to give learners
-practice with finding and fixing issues in real (though contrived) pipelines.
-
-## Running the exercises
-
-- fork the repository (don't just clone it, you need to have a copy in your own
-github account for the actions to work).
-
-- after you fork it, you'll see a screen like this in the actions tab:
+- running a CI build on this branch causes an error:
 
 ![disabled actions on forks](img/disabled-actions.png)
 

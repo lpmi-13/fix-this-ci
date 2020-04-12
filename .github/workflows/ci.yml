@@ -17,4 +17,4 @@ jobs:
         node-version: '12.x'
     - run: npm install
     # this is the step that's currently failing (so look in src/App.test.js)
-    - run: npm run test
+    - run: NODE_ENV=production npm run build
